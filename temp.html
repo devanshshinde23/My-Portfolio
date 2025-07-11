@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./temp.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Software Engineer </p>
+                <h1>Hello , i'm <span>Devansh</span> <br> Shinde from Pune.</h1>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+     
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Devansh2.jpg">
+                    <!-- style="height:550px; width: 350px;" -->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, nulla temporibus? Quos
+                        reiciendis, pariatur architecto ab ducimus iste, modi autem quo itaque laboriosam magni ipsa
+                        debitis? Repellat doloribus delectus eligendi.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi voluptas reiciendis odio,
+                        recusandae id minus tempore in delectus corporis nemo. Ratione quos voluptate mollitia ipsa
+                        dolore perspiciatis tempore dolorum quaerat?
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Full stack Developer </span><br>Desing web/app Interface</li>
+                            <li><span>Web Development</span><br>Web app Development </li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023</span><br>Training+ Internship on Python Development at TechnoHacks </li>
+                            <li><span>2024</span><br>Cybersecurity Virtual Internship program at Paloalto Networks
+                                supported by EduSkills</li>
+                            <li><span>2025</span><br>Jr.Software Engineer Intern at Cravita Technologies Pvt. Ltd. </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2019-2022</span><br>Diploma in Computer Engineering</li>
+                            <li><span>2022-2025</span><br>B.Tech in Information Technology </li>
+                            <li><span>2025</span><br>Full Stack Developer Course </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web/App Designing </h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis ea cumque, quisquam porro
+                        repudiandae inventore aut autem! Magni accusantium voluptatibus .</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis ea cumque, quisquam porro
+                        repudiandae inventore aut autem! Magni accusantium voluptatibus .</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis ea cumque, quisquam porro
+                        repudiandae inventore aut autem! Magni accusantium voluptatibus .</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="devansh.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media app</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store .
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Devansh2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store .
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="devansh.jpg" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping app</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store .
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="button">See More</a>
+        </div>
+    </div>
+
+
+    <!------------ Contact ----------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me </h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> devanshshinde2316@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> 9082767522</p>
+                    <div class="Social-icons">
+                        <a href="https://www.linkedin.com/in/devanshshinde23/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="./DEVANSH (Resume).pdf" download class="button btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name " required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rowa="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Devansh Shinde. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzfnARVbpReQCKf5hxsZ18t6e6ZgbQj1wAqT7Jqxt7PvyrPS5ydXxknk1439I53ZfI/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
